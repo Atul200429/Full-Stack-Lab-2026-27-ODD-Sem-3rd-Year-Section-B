@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CORS Test</title>
+</head>
+<body>
+
+    <h2>CORS Test</h2>
+
+    <button onclick="testAPI()">Call API</button>
+
+    <script>
+        function testAPI() {
+            fetch("http://localhost:5000/api/tasks")
+                .then(response => response.json())
+                .then(data => console.log(data))
+                .catch(error => console.error(error));
+        }
+    </script>
+
+</body>
+</html>
