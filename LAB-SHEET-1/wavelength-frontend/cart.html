@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Cart — Wavelength</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="navbar">
+    <a href="index.html" class="brand">
+      <span class="wave-mark" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span>
+      Wavelength
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="product-detail.html">Product Detail</a></li>
+        <li><a href="cart.html" class="active">Cart</a></li>
+      </ul>
+    </nav>
+    <a href="cart.html" class="nav-cart">🛒 Cart <strong>3</strong></a>
+  </div>
+</header>
+
+<section class="section" style="padding-top:56px;">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>Your cart</h2>
+        <p>3 items — review before you check out.</p>
+      </div>
+    </div>
+
+    <table class="cart-table">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Subtotal</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="cart-item-name">
+              <div class="thumb-sm"><img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=800&q=75" alt="Drift ANC Headphones"></div>
+              <div class="meta">
+                <span class="cat">Over-ear</span>
+                <div>Drift ANC Headphones</div>
+              </div>
+            </div>
+          </td>
+          <td>₹6,499</td>
+          <td>1</td>
+          <td>₹6,499</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-item-name">
+              <div class="thumb-sm"><img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=150&q=70" alt="Pulse True Wireless earbuds"></div>
+              <div class="meta">
+                <span class="cat">Earbuds</span>
+                <div>Pulse True Wireless</div>
+              </div>
+            </div>
+          </td>
+          <td>₹2,999</td>
+          <td>2</td>
+          <td>₹5,998</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-item-name">
+              <div class="thumb-sm"><img src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=150&q=70" alt="Basecamp Mini Speaker"></div>
+              <div class="meta">
+                <span class="cat">Speaker</span>
+                <div>Basecamp Mini Speaker</div>
+              </div>
+            </div>
+          </td>
+          <td>₹3,299</td>
+          <td>1</td>
+          <td>₹3,299</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr class="grand-total">
+          <td colspan="3">Grand total</td>
+          <td>₹15,796</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <div class="cart-summary">
+      <div>
+        <a href="products.html" class="btn btn-ghost">← Continue shopping</a>
+        <p class="empty-note">Prices include GST. Shipping is calculated at checkout.</p>
+      </div>
+      <div class="summary-card">
+        <div class="row"><span>Subtotal</span><span>₹15,796</span></div>
+        <div class="row"><span>Shipping</span><span>₹99</span></div>
+        <div class="row total"><span>Total</span><span>₹15,895</span></div>
+        <a href="checkout.html" class="btn btn-primary btn-block" style="margin-top:18px;">Proceed to checkout</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <span class="wave-mark" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span>
+          Wavelength
+        </a>
+        <p>A small audio gear shop based in Roorkee, shipping across India.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="products.html">All products</a></li>
+          <li><a href="index.html">Featured</a></li>
+          <li><a href="cart.html">Your cart</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>krishnaatul24@gmail.com</li>
+          <li>+91 7367012183</li>
+          <li>Patna, Bihar, IN</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Wavelength Audio. All rights reserved.</span>
+      <span>Mini E-Commerce Project</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
