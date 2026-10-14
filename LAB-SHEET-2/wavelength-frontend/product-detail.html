@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drift ANC Headphones — Wavelength</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="navbar">
+    <a href="index.html" class="brand">
+      <span class="wave-mark" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span>
+      Wavelength
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="product-detail.html" class="active">Product Detail</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+    </nav>
+    <a href="cart.html" class="nav-cart">🛒 Cart <strong>0</strong></a>
+  </div>
+</header>
+
+<section class="section" style="padding-top:56px;">
+  <div class="container">
+    <div class="detail-grid">
+
+      <div class="detail-gallery">
+        <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=800&q=75" alt="Drift ANC over-ear headphones, matte black finish, folded on a wooden desk">
+      </div>
+
+      <div class="detail-info">
+        <span class="cat">Over-ear · Active Noise Cancelling</span>
+        <h1>Drift ANC Headphones</h1>
+        <p class="detail-price">₹6,499</p>
+
+        <div class="detail-desc">
+          <p>Drift is built for long study sessions and longer commutes: 40 hours of playback, hybrid active noise cancelling that actually cancels the hostel corridor, and a headband soft enough to forget you're wearing it four hours in. Pairs to two devices at once, so your laptop and phone can both stay connected.</p>
+        </div>
+
+        <div>
+          <label for="qty" style="font-size:0.85rem; color:var(--ink-soft); display:block; margin-bottom:8px;">Quantity</label>
+          <div class="detail-actions">
+            <div class="qty-selector">
+              <button type="button" id="qty-decrease" aria-label="Decrease quantity">−</button>
+              <input type="number" id="qty" name="qty" value="1" min="1" max="10">
+              <button type="button" id="qty-increase" aria-label="Increase quantity">+</button>
+            </div>
+            <button class="btn btn-primary" type="button" id="detail-add-to-cart" data-id="1">Add to Cart</button>
+            <a href="cart.html" class="btn btn-ghost">Go to cart</a>
+          </div>
+        </div>
+
+        <ul class="spec-list">
+          <li><span>Driver size</span> <strong>40mm dynamic</strong></li>
+          <li><span>Battery life</span> <strong>40 hrs (ANC on)</strong></li>
+          <li><span>Connectivity</span> <strong>Bluetooth 5.3 + AUX</strong></li>
+          <li><span>Weight</span> <strong>256g</strong></li>
+          <li><span>Charging</span> <strong>USB-C, 10 min = 5 hrs</strong></li>
+          <li><span>Warranty</span> <strong>1 year, India</strong></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <span class="wave-mark" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span>
+          Wavelength
+        </a>
+        <p>A small audio gear shop based in Roorkee, shipping across India.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="products.html">All products</a></li>
+          <li><a href="index.html">Featured</a></li>
+          <li><a href="cart.html">Your cart</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>krishnaatul24@gmail.com</li>
+          <li>+91 7367012183</li>
+          <li>Patna, Bihar, IN</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Wavelength Audio. All rights reserved.</span>
+      <span>Mini E-Commerce Project</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

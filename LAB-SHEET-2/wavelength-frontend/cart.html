@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Cart — Wavelength</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="navbar">
+    <a href="index.html" class="brand">
+      <span class="wave-mark" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span>
+      Wavelength
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="product-detail.html">Product Detail</a></li>
+        <li><a href="cart.html" class="active">Cart</a></li>
+      </ul>
+    </nav>
+    <a href="cart.html" class="nav-cart">🛒 Cart <strong>0</strong></a>
+  </div>
+</header>
+
+<section class="section" style="padding-top:56px;">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>Your cart</h2>
+        <p id="cart-count-label">0 items — review before you check out.</p>
+      </div>
+    </div>
+
+    <!-- Empty state, shown by script.js when localStorage cart has no items -->
+    <div id="cart-empty" class="summary-card" style="display:none; text-align:center;">
+      <p style="margin-bottom:18px;">Your cart is empty.</p>
+      <a href="products.html" class="btn btn-primary">Browse products</a>
+    </div>
+
+    <!-- Table and summary below are populated dynamically by script.js from localStorage -->
+    <table class="cart-table" id="cart-table" style="display:none;">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Subtotal</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="cart-body"></tbody>
+      <tfoot>
+        <tr class="grand-total">
+          <td colspan="4">Grand total</td>
+          <td id="grand-total-cell">₹0</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <div class="cart-summary" id="cart-summary-block" style="display:none;">
+      <div>
+        <a href="products.html" class="btn btn-ghost">← Continue shopping</a>
+        <p class="empty-note">Prices include GST. Shipping is calculated at checkout.</p>
+      </div>
+      <div class="summary-card">
+        <div class="row"><span>Subtotal</span><span id="summary-subtotal">₹0</span></div>
+        <div class="row"><span>Shipping</span><span id="summary-shipping">₹0</span></div>
+        <div class="row total"><span>Total</span><span id="summary-total">₹0</span></div>
+        <a href="checkout.html" class="btn btn-primary btn-block" style="margin-top:18px;">Proceed to checkout</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <span class="wave-mark" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span>
+          Wavelength
+        </a>
+        <p>A small audio gear shop based in Roorkee, shipping across India.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="products.html">All products</a></li>
+          <li><a href="index.html">Featured</a></li>
+          <li><a href="cart.html">Your cart</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>krishnaatul24@gmail.com</li>
+          <li>+91 7367012183</li>
+          <li>Patna, Bihar, IN</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Wavelength Audio. All rights reserved.</span>
+      <span>Mini E-Commerce Project</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

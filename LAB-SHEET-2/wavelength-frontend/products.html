@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All Products — Wavelength</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="navbar">
+    <a href="index.html" class="brand">
+      <span class="wave-mark" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span>
+      Wavelength
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html" class="active">Products</a></li>
+        <li><a href="product-detail.html">Product Detail</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+    </nav>
+    <a href="cart.html" class="nav-cart">🛒 Cart <strong>0</strong></a>
+  </div>
+</header>
+
+<section class="section" style="padding-top:56px;">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>All products</h2>
+        <p>Eight pieces of gear, four categories, zero filler.</p>
+      </div>
+    </div>
+
+    <!-- Cards below are rendered dynamically by script.js from the PRODUCTS array -->
+    <div class="product-grid" id="product-grid"></div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <span class="wave-mark" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span>
+          Wavelength
+        </a>
+        <p>A small audio gear shop based in Roorkee, shipping across India.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="products.html">All products</a></li>
+          <li><a href="index.html">Featured</a></li>
+          <li><a href="cart.html">Your cart</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>krishnaatul24@gmail.com</li>
+          <li>+91 7367012183</li>
+          <li>Patna, Bihar, IN</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Wavelength Audio. All rights reserved.</span>
+      <span>Mini E-Commerce Project</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
