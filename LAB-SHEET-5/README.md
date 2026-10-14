@@ -297,4 +297,4 @@ GitHub: [@Atul200429](https://github.com/Atul200429)
 
 ---
 
-*Submitted as part of the Full Stack Web Development lab coursework.*
+**Submitted as part of the Full Stack Web Development lab coursework.**
